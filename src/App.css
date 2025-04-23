@@ -161,6 +161,16 @@ ul {
   cursor: pointer;
   max-width: 800px;
   margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: box-shadow 0.2s, transform 0.2s;
+  background: #fff;
+}
+
+.project-card:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+  transform: translateY(-4px) scale(1.03);
+  cursor: pointer;
 }
 
 .project-card.reverse {
