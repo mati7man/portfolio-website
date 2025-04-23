@@ -6,9 +6,9 @@ function About() {
   const [skillsOpen, setSkillsOpen] = useState(false);
 
   const languages = [
-    { name: 'JavaScript', icon: '/placeholder.svg' },
-    { name: 'HTML', icon: '/placeholder.svg' },
-    { name: 'CSS', icon: '/placeholder.svg' }
+    { name: 'JavaScript', icon: '/java.svg' },
+    { name: 'HTML', icon: '/html.svg' },
+    { name: 'CSS', icon: '/css.svg' }
   ];
 
   return (

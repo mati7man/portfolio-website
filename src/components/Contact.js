@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import placeholder from '../assets/placeholder.svg';
+import contact1 from '../assets/contact-bg.svg';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -26,9 +26,9 @@ function Contact() {
   
   return (
     <section className="contact" id="contact" style={{
-      backgroundImage: `url(${placeholder})`,
+      backgroundImage: `url(${contact1})`,
       backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover',
+      backgroundSize: 'contain',
       backgroundPosition: 'center'
     }}>
       <div className="contact-content">
