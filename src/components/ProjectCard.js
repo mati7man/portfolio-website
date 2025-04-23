@@ -9,8 +9,8 @@ function ProjectCard({ project, reverse }) {
 
   return (
     <>
-      <div className={`project-card ${reverse ? 'reverse' : ''}`}>
-        <div className="project-image" onClick={openModal}>
+      <div className={`project-card ${reverse ? 'reverse' : ''}`} onClick={openModal} style={{ cursor: 'pointer' }}>
+        <div className="project-image">
           <img src={project.image || "/placeholder.svg"} alt={project.title} />
         </div>
         <div className="project-content">
@@ -28,10 +28,7 @@ function ProjectCard({ project, reverse }) {
               <li key={index}>{tech}</li>
             ))}
           </ul>
-          <a href="#" className="btn" onClick={(e) => {
-            e.preventDefault();
-            openModal();
-          }}>See project</a>
+          <a href="#" className="btn" onClick={e => e.preventDefault()}>See project</a>
         </div>
       </div>
 

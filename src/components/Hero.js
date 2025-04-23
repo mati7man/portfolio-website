@@ -1,13 +1,14 @@
 import React from 'react';
-import placeholder from '../assets/placeholder.svg';
+import heroBg from '../assets/hero-bg.svg';
 
 function Hero() {
   return (
     <section className="hero" id="hero" style={{
-      backgroundImage: `url(${placeholder})`,
+      backgroundImage: `url(${heroBg})`,
       backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center'
+      backgroundSize: 'contain',
+      backgroundPosition: 'center',
+      borderBottomLeftRadius: '180px',
     }}>
       <div className="hero-content">
         <h1>I'm Alexandra.<br />Glad to see you!</h1>
@@ -26,7 +27,6 @@ function Hero() {
             <a href="#" aria-label="Medium"><i className="fab fa-medium-m"></i></a>
           </div>
         </div>
-        <a href="#" className="btn">Get my resume</a>
       </div>
     </section>
   );
